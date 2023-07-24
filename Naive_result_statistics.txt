@@ -1,0 +1,148 @@
+STATISTICS FOR Unreduced_Kappa
+             df     sum_sq   mean_sq            F         PR(>F)
+C(Model)    5.0  28.446803  5.689361  2795.740233  6.986864e-238
+Residual  282.0   0.573873  0.002035          NaN            NaN
+Pairwise comparison for           Model           Dataset  Unreduced_Kappa  Reduced_Kappa  Unreduced_F1  Reduced_F1
+0    Simple CNN  three hard drift         0.746681       0.913073      0.830942    0.961499
+1    Simple CNN  three hard drift         0.863040       0.970709      0.908686    0.986934
+2    Simple CNN  three hard drift         0.813265       0.947409      0.875442    0.976630
+3    Simple CNN  three hard drift         0.815015       0.950864      0.876654    0.978175
+4    Simple CNN  three hard drift         0.821878       0.939913      0.881255    0.973272
+..          ...               ...              ...            ...           ...         ...
+283   Split CNN  three hard drift         0.883745       0.982714      0.922498    0.992326
+284   Split CNN  three hard drift         0.887003       0.979888      0.924739    0.990988
+285   Split CNN  three hard drift         0.841003       0.939948      0.894043    0.973115
+286   Split CNN  three hard drift         0.888555       0.981722      0.925710    0.991978
+287   Split CNN  three hard drift         0.881863       0.977987      0.921231    0.990342
+
+[288 rows x 6 columns]     Multiple Comparison of Means - Tukey HSD, FWER=0.05     
+=============================================================
+   group1     group2   meandiff p-adj   lower   upper  reject
+-------------------------------------------------------------
+DeepChannel       LSTM    0.004  0.998 -0.0224  0.0304  False
+DeepChannel     ResNet  -0.3847    0.0 -0.4111 -0.3582   True
+DeepChannel Simple CNN   0.4401    0.0  0.4137  0.4665   True
+DeepChannel  Split CNN   0.4823    0.0  0.4559  0.5087   True
+DeepChannel       UNet   0.4125    0.0   0.386  0.4389   True
+       LSTM     ResNet  -0.3887    0.0 -0.4151 -0.3623   True
+       LSTM Simple CNN   0.4361    0.0  0.4097  0.4625   True
+       LSTM  Split CNN   0.4783    0.0  0.4518  0.5047   True
+       LSTM       UNet   0.4085    0.0   0.382  0.4349   True
+     ResNet Simple CNN   0.8248    0.0  0.7983  0.8512   True
+     ResNet  Split CNN   0.8669    0.0  0.8405  0.8934   True
+     ResNet       UNet   0.7971    0.0  0.7707  0.8236   True
+ Simple CNN  Split CNN   0.0422 0.0001  0.0158  0.0686   True
+ Simple CNN       UNet  -0.0276 0.0345 -0.0541 -0.0012   True
+  Split CNN       UNet  -0.0698    0.0 -0.0962 -0.0434   True
+-------------------------------------------------------------
+STATISTICS FOR Reduced_Kappa
+             df     sum_sq   mean_sq           F         PR(>F)
+C(Model)    5.0  32.765329  6.553066  920.775664  2.580503e-172
+Residual  282.0   2.006965  0.007117         NaN            NaN
+Pairwise comparison for           Model           Dataset  Unreduced_Kappa  Reduced_Kappa  Unreduced_F1  Reduced_F1
+0    Simple CNN  three hard drift         0.746681       0.913073      0.830942    0.961499
+1    Simple CNN  three hard drift         0.863040       0.970709      0.908686    0.986934
+2    Simple CNN  three hard drift         0.813265       0.947409      0.875442    0.976630
+3    Simple CNN  three hard drift         0.815015       0.950864      0.876654    0.978175
+4    Simple CNN  three hard drift         0.821878       0.939913      0.881255    0.973272
+..          ...               ...              ...            ...           ...         ...
+283   Split CNN  three hard drift         0.883745       0.982714      0.922498    0.992326
+284   Split CNN  three hard drift         0.887003       0.979888      0.924739    0.990988
+285   Split CNN  three hard drift         0.841003       0.939948      0.894043    0.973115
+286   Split CNN  three hard drift         0.888555       0.981722      0.925710    0.991978
+287   Split CNN  three hard drift         0.881863       0.977987      0.921231    0.990342
+
+[288 rows x 6 columns]     Multiple Comparison of Means - Tukey HSD, FWER=0.05     
+=============================================================
+   group1     group2   meandiff p-adj   lower   upper  reject
+-------------------------------------------------------------
+DeepChannel       LSTM   0.0254   0.68  -0.024  0.0748  False
+DeepChannel     ResNet  -0.7258    0.0 -0.7752 -0.6764   True
+DeepChannel Simple CNN   0.2256    0.0  0.1762   0.275   True
+DeepChannel  Split CNN   0.2392    0.0  0.1898  0.2886   True
+DeepChannel       UNet   0.2172    0.0  0.1678  0.2666   True
+       LSTM     ResNet  -0.7512    0.0 -0.8006 -0.7018   True
+       LSTM Simple CNN   0.2002    0.0  0.1507  0.2496   True
+       LSTM  Split CNN   0.2138    0.0  0.1643  0.2632   True
+       LSTM       UNet   0.1918    0.0  0.1424  0.2412   True
+     ResNet Simple CNN   0.9514    0.0  0.9019  1.0008   True
+     ResNet  Split CNN    0.965    0.0  0.9155  1.0144   True
+     ResNet       UNet    0.943    0.0  0.8936  0.9924   True
+ Simple CNN  Split CNN   0.0136 0.9692 -0.0358   0.063  False
+ Simple CNN       UNet  -0.0084 0.9966 -0.0578   0.041  False
+  Split CNN       UNet   -0.022 0.7977 -0.0714  0.0274  False
+-------------------------------------------------------------
+STATISTICS FOR Unreduced_F1
+             df     sum_sq   mean_sq            F         PR(>F)
+C(Model)    5.0  12.665788  2.533158  2765.798803  3.093037e-237
+Residual  282.0   0.258280  0.000916          NaN            NaN
+Pairwise comparison for           Model           Dataset  Unreduced_Kappa  Reduced_Kappa  Unreduced_F1  Reduced_F1
+0    Simple CNN  three hard drift         0.746681       0.913073      0.830942    0.961499
+1    Simple CNN  three hard drift         0.863040       0.970709      0.908686    0.986934
+2    Simple CNN  three hard drift         0.813265       0.947409      0.875442    0.976630
+3    Simple CNN  three hard drift         0.815015       0.950864      0.876654    0.978175
+4    Simple CNN  three hard drift         0.821878       0.939913      0.881255    0.973272
+..          ...               ...              ...            ...           ...         ...
+283   Split CNN  three hard drift         0.883745       0.982714      0.922498    0.992326
+284   Split CNN  three hard drift         0.887003       0.979888      0.924739    0.990988
+285   Split CNN  three hard drift         0.841003       0.939948      0.894043    0.973115
+286   Split CNN  three hard drift         0.888555       0.981722      0.925710    0.991978
+287   Split CNN  three hard drift         0.881863       0.977987      0.921231    0.990342
+
+[288 rows x 6 columns]     Multiple Comparison of Means - Tukey HSD, FWER=0.05     
+=============================================================
+   group1     group2   meandiff p-adj   lower   upper  reject
+-------------------------------------------------------------
+DeepChannel       LSTM   0.0031 0.9963 -0.0147  0.0208  False
+DeepChannel     ResNet  -0.2568    0.0 -0.2746 -0.2391   True
+DeepChannel Simple CNN   0.2936    0.0  0.2759  0.3114   True
+DeepChannel  Split CNN   0.3218    0.0   0.304  0.3395   True
+DeepChannel       UNet   0.2752    0.0  0.2575  0.2929   True
+       LSTM     ResNet  -0.2599    0.0 -0.2776 -0.2422   True
+       LSTM Simple CNN   0.2906    0.0  0.2728  0.3083   True
+       LSTM  Split CNN   0.3187    0.0   0.301  0.3364   True
+       LSTM       UNet   0.2722    0.0  0.2544  0.2899   True
+     ResNet Simple CNN   0.5505    0.0  0.5327  0.5682   True
+     ResNet  Split CNN   0.5786    0.0  0.5609  0.5963   True
+     ResNet       UNet    0.532    0.0  0.5143  0.5498   True
+ Simple CNN  Split CNN   0.0281 0.0001  0.0104  0.0459   True
+ Simple CNN       UNet  -0.0184 0.0365 -0.0361 -0.0007   True
+  Split CNN       UNet  -0.0465    0.0 -0.0643 -0.0288   True
+-------------------------------------------------------------
+STATISTICS FOR Reduced_F1
+             df    sum_sq   mean_sq           F         PR(>F)
+C(Model)    5.0  3.562101  0.712420  371.296731  9.009534e-122
+Residual  282.0  0.541083  0.001919         NaN            NaN
+Pairwise comparison for           Model           Dataset  Unreduced_Kappa  Reduced_Kappa  Unreduced_F1  Reduced_F1
+0    Simple CNN  three hard drift         0.746681       0.913073      0.830942    0.961499
+1    Simple CNN  three hard drift         0.863040       0.970709      0.908686    0.986934
+2    Simple CNN  three hard drift         0.813265       0.947409      0.875442    0.976630
+3    Simple CNN  three hard drift         0.815015       0.950864      0.876654    0.978175
+4    Simple CNN  three hard drift         0.821878       0.939913      0.881255    0.973272
+..          ...               ...              ...            ...           ...         ...
+283   Split CNN  three hard drift         0.883745       0.982714      0.922498    0.992326
+284   Split CNN  three hard drift         0.887003       0.979888      0.924739    0.990988
+285   Split CNN  three hard drift         0.841003       0.939948      0.894043    0.973115
+286   Split CNN  three hard drift         0.888555       0.981722      0.925710    0.991978
+287   Split CNN  three hard drift         0.881863       0.977987      0.921231    0.990342
+
+[288 rows x 6 columns]     Multiple Comparison of Means - Tukey HSD, FWER=0.05     
+=============================================================
+   group1     group2   meandiff p-adj   lower   upper  reject
+-------------------------------------------------------------
+DeepChannel       LSTM    0.016 0.4745 -0.0097  0.0417  False
+DeepChannel     ResNet  -0.1999    0.0 -0.2255 -0.1742   True
+DeepChannel Simple CNN   0.1117    0.0  0.0861  0.1374   True
+DeepChannel  Split CNN   0.1177    0.0  0.0921  0.1434   True
+DeepChannel       UNet   0.1076    0.0   0.082  0.1333   True
+       LSTM     ResNet  -0.2159    0.0 -0.2415 -0.1902   True
+       LSTM Simple CNN   0.0957    0.0  0.0701  0.1214   True
+       LSTM  Split CNN   0.1017    0.0  0.0761  0.1274   True
+       LSTM       UNet   0.0916    0.0   0.066  0.1173   True
+     ResNet Simple CNN   0.3116    0.0  0.2859  0.3372   True
+     ResNet  Split CNN   0.3176    0.0  0.2919  0.3432   True
+     ResNet       UNet   0.3075    0.0  0.2818  0.3332   True
+ Simple CNN  Split CNN    0.006 0.9849 -0.0197  0.0317  False
+ Simple CNN       UNet  -0.0041 0.9975 -0.0297  0.0216  False
+  Split CNN       UNet  -0.0101 0.8699 -0.0357  0.0156  False
+-------------------------------------------------------------

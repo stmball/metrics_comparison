@@ -1,0 +1,96 @@
+STATISTICS FOR Unreduced_Kappa
+             df    sum_sq   mean_sq           F         PR(>F)
+C(Model)    5.0  1.133355  0.226671  966.420867  4.148310e-175
+Residual  282.0  0.066142  0.000235         NaN            NaN
+Pairwise comparison for five hard nodrift            Multiple Comparison of Means - Tukey HSD, FWER=0.05             
+============================================================================
+      group1             group2       meandiff p-adj   lower   upper  reject
+----------------------------------------------------------------------------
+        Simple CNN          Split CNN   0.0128 0.0008  0.0038  0.0217   True
+        Simple CNN               UNet    0.136    0.0  0.1271   0.145   True
+        Simple CNN Viterbi Simple CNN  -0.0064 0.3164 -0.0154  0.0026  False
+        Simple CNN  Viterbi Split CNN   0.0057 0.4618 -0.0033  0.0146  False
+        Simple CNN       Viterbi UNet    0.135    0.0   0.126   0.144   True
+         Split CNN               UNet   0.1233    0.0  0.1143  0.1322   True
+         Split CNN Viterbi Simple CNN  -0.0192    0.0 -0.0281 -0.0102   True
+         Split CNN  Viterbi Split CNN  -0.0071 0.2099 -0.0161  0.0019  False
+         Split CNN       Viterbi UNet   0.1222    0.0  0.1133  0.1312   True
+              UNet Viterbi Simple CNN  -0.1424    0.0 -0.1514 -0.1335   True
+              UNet  Viterbi Split CNN  -0.1304    0.0 -0.1393 -0.1214   True
+              UNet       Viterbi UNet   -0.001 0.9995   -0.01  0.0079  False
+Viterbi Simple CNN  Viterbi Split CNN   0.0121 0.0019  0.0031   0.021   True
+Viterbi Simple CNN       Viterbi UNet   0.1414    0.0  0.1324  0.1504   True
+ Viterbi Split CNN       Viterbi UNet   0.1293    0.0  0.1204  0.1383   True
+----------------------------------------------------------------------------
+STATISTICS FOR Reduced_Kappa
+             df    sum_sq   mean_sq            F         PR(>F)
+C(Model)    5.0  2.090192  0.418038  2231.953358  2.125191e-224
+Residual  282.0  0.052818  0.000187          NaN            NaN
+Pairwise comparison for five hard nodrift            Multiple Comparison of Means - Tukey HSD, FWER=0.05             
+============================================================================
+      group1             group2       meandiff p-adj   lower   upper  reject
+----------------------------------------------------------------------------
+        Simple CNN          Split CNN   0.0042 0.6663 -0.0038  0.0122  False
+        Simple CNN               UNet   0.1838    0.0  0.1758  0.1919   True
+        Simple CNN Viterbi Simple CNN   0.0009 0.9996 -0.0071  0.0089  False
+        Simple CNN  Viterbi Split CNN   0.0079 0.0543 -0.0001  0.0159  False
+        Simple CNN       Viterbi UNet   0.1839    0.0  0.1759   0.192   True
+         Split CNN               UNet   0.1797    0.0  0.1716  0.1877   True
+         Split CNN Viterbi Simple CNN  -0.0033 0.8455 -0.0113  0.0047  False
+         Split CNN  Viterbi Split CNN   0.0037 0.7613 -0.0043  0.0118  False
+         Split CNN       Viterbi UNet   0.1798    0.0  0.1717  0.1878   True
+              UNet Viterbi Simple CNN   -0.183    0.0  -0.191 -0.1749   True
+              UNet  Viterbi Split CNN  -0.1759    0.0 -0.1839 -0.1679   True
+              UNet       Viterbi UNet   0.0001    1.0 -0.0079  0.0081  False
+Viterbi Simple CNN  Viterbi Split CNN    0.007 0.1208  -0.001  0.0151  False
+Viterbi Simple CNN       Viterbi UNet   0.1831    0.0   0.175  0.1911   True
+ Viterbi Split CNN       Viterbi UNet    0.176    0.0   0.168   0.184   True
+----------------------------------------------------------------------------
+STATISTICS FOR Unreduced_F1
+             df    sum_sq   mean_sq           F         PR(>F)
+C(Model)    5.0  0.033678  0.006736  573.125179  2.064203e-145
+Residual  282.0  0.003314  0.000012         NaN            NaN
+Pairwise comparison for five hard nodrift            Multiple Comparison of Means - Tukey HSD, FWER=0.05             
+============================================================================
+      group1             group2       meandiff p-adj   lower   upper  reject
+----------------------------------------------------------------------------
+        Simple CNN          Split CNN   0.0021  0.033  0.0001  0.0041   True
+        Simple CNN               UNet   0.0235    0.0  0.0215  0.0255   True
+        Simple CNN Viterbi Simple CNN  -0.0009 0.8081 -0.0029  0.0011  False
+        Simple CNN  Viterbi Split CNN   0.0012 0.5507 -0.0008  0.0032  False
+        Simple CNN       Viterbi UNet   0.0234    0.0  0.0214  0.0254   True
+         Split CNN               UNet   0.0214    0.0  0.0194  0.0234   True
+         Split CNN Viterbi Simple CNN   -0.003 0.0004  -0.005  -0.001   True
+         Split CNN  Viterbi Split CNN  -0.0009 0.7608 -0.0029  0.0011  False
+         Split CNN       Viterbi UNet   0.0213    0.0  0.0193  0.0233   True
+              UNet Viterbi Simple CNN  -0.0244    0.0 -0.0264 -0.0224   True
+              UNet  Viterbi Split CNN  -0.0224    0.0 -0.0244 -0.0204   True
+              UNet       Viterbi UNet  -0.0002 0.9999 -0.0022  0.0019  False
+Viterbi Simple CNN  Viterbi Split CNN   0.0021 0.0422     0.0  0.0041   True
+Viterbi Simple CNN       Viterbi UNet   0.0243    0.0  0.0222  0.0263   True
+ Viterbi Split CNN       Viterbi UNet   0.0222    0.0  0.0202  0.0242   True
+----------------------------------------------------------------------------
+STATISTICS FOR Reduced_F1
+             df    sum_sq   mean_sq            F         PR(>F)
+C(Model)    5.0  0.035877  0.007175  1006.467717  1.851240e-177
+Residual  282.0  0.002010  0.000007          NaN            NaN
+Pairwise comparison for five hard nodrift            Multiple Comparison of Means - Tukey HSD, FWER=0.05             
+============================================================================
+      group1             group2       meandiff p-adj   lower   upper  reject
+----------------------------------------------------------------------------
+        Simple CNN          Split CNN   0.0015 0.0729 -0.0001  0.0031  False
+        Simple CNN               UNet   0.0245    0.0   0.023  0.0261   True
+        Simple CNN Viterbi Simple CNN   0.0002 0.9991 -0.0014  0.0018  False
+        Simple CNN  Viterbi Split CNN    0.002 0.0049  0.0004  0.0035   True
+        Simple CNN       Viterbi UNet   0.0246    0.0   0.023  0.0261   True
+         Split CNN               UNet   0.0231    0.0  0.0215  0.0246   True
+         Split CNN Viterbi Simple CNN  -0.0013 0.1753 -0.0028  0.0003  False
+         Split CNN  Viterbi Split CNN   0.0005 0.9519 -0.0011   0.002  False
+         Split CNN       Viterbi UNet   0.0231    0.0  0.0215  0.0246   True
+              UNet Viterbi Simple CNN  -0.0243    0.0 -0.0259 -0.0228   True
+              UNet  Viterbi Split CNN  -0.0226    0.0 -0.0241  -0.021   True
+              UNet       Viterbi UNet      0.0    1.0 -0.0016  0.0016  False
+Viterbi Simple CNN  Viterbi Split CNN   0.0018 0.0171  0.0002  0.0033   True
+Viterbi Simple CNN       Viterbi UNet   0.0243    0.0  0.0228  0.0259   True
+ Viterbi Split CNN       Viterbi UNet   0.0226    0.0   0.021  0.0242   True
+----------------------------------------------------------------------------

@@ -1,0 +1,96 @@
+STATISTICS FOR Unreduced_Kappa
+             df    sum_sq   mean_sq            F         PR(>F)
+C(Model)    5.0  1.099153  0.219831  1358.817604  5.545200e-195
+Residual  282.0  0.045622  0.000162          NaN            NaN
+Pairwise comparison for five hard nodrift                   Multiple Comparison of Means - Tukey HSD, FWER=0.05                    
+==========================================================================================
+          group1                    group2          meandiff p-adj   lower   upper  reject
+------------------------------------------------------------------------------------------
+       Viterbi Simple CNN Viterbi Simple CNN Window   0.0015 0.9925  -0.006  0.0089  False
+       Viterbi Simple CNN         Viterbi Split CNN   0.0121 0.0001  0.0046  0.0195   True
+       Viterbi Simple CNN  Viterbi Split CNN Window   0.0231    0.0  0.0156  0.0305   True
+       Viterbi Simple CNN              Viterbi UNet   0.1414    0.0   0.134  0.1489   True
+       Viterbi Simple CNN       Viterbi UNet Window  -0.0658    0.0 -0.0732 -0.0583   True
+Viterbi Simple CNN Window         Viterbi Split CNN   0.0106 0.0009  0.0031   0.018   True
+Viterbi Simple CNN Window  Viterbi Split CNN Window   0.0216    0.0  0.0141   0.029   True
+Viterbi Simple CNN Window              Viterbi UNet   0.1399    0.0  0.1325  0.1474   True
+Viterbi Simple CNN Window       Viterbi UNet Window  -0.0673    0.0 -0.0747 -0.0598   True
+        Viterbi Split CNN  Viterbi Split CNN Window    0.011 0.0004  0.0036  0.0185   True
+        Viterbi Split CNN              Viterbi UNet   0.1293    0.0  0.1219  0.1368   True
+        Viterbi Split CNN       Viterbi UNet Window  -0.0778    0.0 -0.0853 -0.0704   True
+ Viterbi Split CNN Window              Viterbi UNet   0.1183    0.0  0.1109  0.1258   True
+ Viterbi Split CNN Window       Viterbi UNet Window  -0.0889    0.0 -0.0963 -0.0814   True
+             Viterbi UNet       Viterbi UNet Window  -0.2072    0.0 -0.2146 -0.1997   True
+------------------------------------------------------------------------------------------
+STATISTICS FOR Reduced_Kappa
+             df    sum_sq   mean_sq            F         PR(>F)
+C(Model)    5.0  1.663710  0.332742  2797.032294  6.554716e-238
+Residual  282.0  0.033547  0.000119          NaN            NaN
+Pairwise comparison for five hard nodrift                   Multiple Comparison of Means - Tukey HSD, FWER=0.05                    
+==========================================================================================
+          group1                    group2          meandiff p-adj   lower   upper  reject
+------------------------------------------------------------------------------------------
+       Viterbi Simple CNN Viterbi Simple CNN Window   0.0022 0.9281 -0.0042  0.0085  False
+       Viterbi Simple CNN         Viterbi Split CNN    0.007  0.021  0.0007  0.0134   True
+       Viterbi Simple CNN  Viterbi Split CNN Window   0.0149    0.0  0.0085  0.0213   True
+       Viterbi Simple CNN              Viterbi UNet   0.1831    0.0  0.1767  0.1894   True
+       Viterbi Simple CNN       Viterbi UNet Window  -0.0651    0.0 -0.0715 -0.0587   True
+Viterbi Simple CNN Window         Viterbi Split CNN   0.0049 0.2413 -0.0015  0.0113  False
+Viterbi Simple CNN Window  Viterbi Split CNN Window   0.0128    0.0  0.0064  0.0192   True
+Viterbi Simple CNN Window              Viterbi UNet   0.1809    0.0  0.1745  0.1873   True
+Viterbi Simple CNN Window       Viterbi UNet Window  -0.0673    0.0 -0.0736 -0.0609   True
+        Viterbi Split CNN  Viterbi Split CNN Window   0.0079 0.0061  0.0015  0.0143   True
+        Viterbi Split CNN              Viterbi UNet    0.176    0.0  0.1696  0.1824   True
+        Viterbi Split CNN       Viterbi UNet Window  -0.0722    0.0 -0.0785 -0.0658   True
+ Viterbi Split CNN Window              Viterbi UNet   0.1681    0.0  0.1617  0.1745   True
+ Viterbi Split CNN Window       Viterbi UNet Window    -0.08    0.0 -0.0864 -0.0737   True
+             Viterbi UNet       Viterbi UNet Window  -0.2482    0.0 -0.2546 -0.2418   True
+------------------------------------------------------------------------------------------
+STATISTICS FOR Unreduced_F1
+             df    sum_sq   mean_sq           F         PR(>F)
+C(Model)    5.0  0.031662  0.006332  524.076261  1.890573e-140
+Residual  282.0  0.003407  0.000012         NaN            NaN
+Pairwise comparison for five hard nodrift                   Multiple Comparison of Means - Tukey HSD, FWER=0.05                    
+==========================================================================================
+          group1                    group2          meandiff p-adj   lower   upper  reject
+------------------------------------------------------------------------------------------
+       Viterbi Simple CNN Viterbi Simple CNN Window   0.0003 0.9984 -0.0017  0.0023  False
+       Viterbi Simple CNN         Viterbi Split CNN   0.0021 0.0473     0.0  0.0041   True
+       Viterbi Simple CNN  Viterbi Split CNN Window   0.0039    0.0  0.0018  0.0059   True
+       Viterbi Simple CNN              Viterbi UNet   0.0243    0.0  0.0222  0.0263   True
+       Viterbi Simple CNN       Viterbi UNet Window  -0.0108    0.0 -0.0128 -0.0088   True
+Viterbi Simple CNN Window         Viterbi Split CNN   0.0018 0.1359 -0.0003  0.0038  False
+Viterbi Simple CNN Window  Viterbi Split CNN Window   0.0036    0.0  0.0015  0.0056   True
+Viterbi Simple CNN Window              Viterbi UNet    0.024    0.0  0.0219   0.026   True
+Viterbi Simple CNN Window       Viterbi UNet Window  -0.0111    0.0 -0.0131 -0.0091   True
+        Viterbi Split CNN  Viterbi Split CNN Window   0.0018 0.1138 -0.0002  0.0038  False
+        Viterbi Split CNN              Viterbi UNet   0.0222    0.0  0.0202  0.0242   True
+        Viterbi Split CNN       Viterbi UNet Window  -0.0128    0.0 -0.0149 -0.0108   True
+ Viterbi Split CNN Window              Viterbi UNet   0.0204    0.0  0.0184  0.0224   True
+ Viterbi Split CNN Window       Viterbi UNet Window  -0.0147    0.0 -0.0167 -0.0126   True
+             Viterbi UNet       Viterbi UNet Window  -0.0351    0.0 -0.0371  -0.033   True
+------------------------------------------------------------------------------------------
+STATISTICS FOR Reduced_F1
+             df    sum_sq   mean_sq           F         PR(>F)
+C(Model)    5.0  0.031099  0.006220  782.666537  5.445061e-163
+Residual  282.0  0.002241  0.000008         NaN            NaN
+Pairwise comparison for five hard nodrift                   Multiple Comparison of Means - Tukey HSD, FWER=0.05                    
+==========================================================================================
+          group1                    group2          meandiff p-adj   lower   upper  reject
+------------------------------------------------------------------------------------------
+       Viterbi Simple CNN Viterbi Simple CNN Window   0.0003 0.9975 -0.0014  0.0019  False
+       Viterbi Simple CNN         Viterbi Split CNN   0.0018 0.0288  0.0001  0.0034   True
+       Viterbi Simple CNN  Viterbi Split CNN Window   0.0031    0.0  0.0015  0.0048   True
+       Viterbi Simple CNN              Viterbi UNet   0.0243    0.0  0.0227   0.026   True
+       Viterbi Simple CNN       Viterbi UNet Window  -0.0102    0.0 -0.0119 -0.0086   True
+Viterbi Simple CNN Window         Viterbi Split CNN   0.0015 0.0988 -0.0002  0.0032  False
+Viterbi Simple CNN Window  Viterbi Split CNN Window   0.0029    0.0  0.0012  0.0045   True
+Viterbi Simple CNN Window              Viterbi UNet   0.0241    0.0  0.0224  0.0257   True
+Viterbi Simple CNN Window       Viterbi UNet Window  -0.0105    0.0 -0.0121 -0.0088   True
+        Viterbi Split CNN  Viterbi Split CNN Window   0.0014 0.1644 -0.0003   0.003  False
+        Viterbi Split CNN              Viterbi UNet   0.0226    0.0  0.0209  0.0242   True
+        Viterbi Split CNN       Viterbi UNet Window   -0.012    0.0 -0.0136 -0.0103   True
+ Viterbi Split CNN Window              Viterbi UNet   0.0212    0.0  0.0196  0.0229   True
+ Viterbi Split CNN Window       Viterbi UNet Window  -0.0133    0.0  -0.015 -0.0117   True
+             Viterbi UNet       Viterbi UNet Window  -0.0346    0.0 -0.0362 -0.0329   True
+------------------------------------------------------------------------------------------
